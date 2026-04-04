@@ -70,13 +70,6 @@ Latest updates in this snapshot:
 - Doc validators now cover root markdown files, reject repository-escape local links, and keep the markdown inventory contract centralized.
 - Legacy-name validation and related regression coverage were hardened to fail on actionable lint instead of uncaught stack traces.
 
-Current assessment artifacts:
-
-- [`cross-validation-report-2026-04-04.md`](cross-validation-report-2026-04-04.md)
-- [`phased-remediation-plan-2026-04-04.md`](phased-remediation-plan-2026-04-04.md)
-- [`docs/project-assessment-2026-04-04.md`](docs/project-assessment-2026-04-04.md)
-- [`docs/fix-plan-2026-04-04.md`](docs/fix-plan-2026-04-04.md)
-
 ## Verify Installation
 
 Start a fresh session and try one of these prompts:
@@ -124,8 +117,6 @@ More examples live in [`docs/examples/example-prompts.md`](docs/examples/example
 - Release packaging issues: build from the SentinelXPrime repo root only, not from a wrapper workspace or nested copy.
 
 ## Validation And Release
-
-Validation scenarios live in [`docs/validation/2026-04-04-sentinelxprime-scenarios.md`](docs/validation/2026-04-04-sentinelxprime-scenarios.md).
 
 Validation prerequisites:
 
