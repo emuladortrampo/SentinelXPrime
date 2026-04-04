@@ -63,6 +63,13 @@ Use `node scripts/check-release-readiness.mjs` or the `Release Claim Readiness` 
 - `node scripts/check-release-readiness.mjs` still fails because Claude Code does not yet have a fresh authenticated runtime `pass` row in the readiness matrix.
 - Until that evidence exists, describe the repo as validated for private review, not as fully release-ready or handoff-ready.
 
+Latest updates in this snapshot:
+
+- Share-facing root reports are now English-only and canonicalized as `cross-validation-report-2026-04-04.md` and `phased-remediation-plan-2026-04-04.md`.
+- The release-readiness claim gate now accepts only the canonical readiness matrix and enforces current-pass freshness checks.
+- Doc validators now cover root markdown files, reject repository-escape local links, and keep the markdown inventory contract centralized.
+- Legacy-name validation and related regression coverage were hardened to fail on actionable lint instead of uncaught stack traces.
+
 Current assessment artifacts:
 
 - [`cross-validation-report-2026-04-04.md`](cross-validation-report-2026-04-04.md)
