@@ -7,39 +7,36 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat)](LICENSE)
 [![Stacks](https://img.shields.io/badge/Stacks-ASP.NET%20Core%20%7C%20Spring%20%7C%20Node%20%7C%20Python%20%7C%20Go%20%7C%20Rails%20%7C%20Laravel%20%7C%20Rust-1f6feb?style=flat)](#supported-stacks)
 
-SentinelXPrime helps teams catch missing security requirements during planning, surface scoped concerns during risky implementation work, offer opt-in review help after coding, and propose a practical security check plan before release.
+AI coding agents accelerate development but rarely surface security concerns at the right moment. SentinelXPrime fills that gap by embedding stage-aware security skills directly into your coding agent workflow — from planning through release.
 
-The suite is advisory-first. It improves signal and consistency, but it does not certify a repository as secure, fully reviewed, or production-ready.
+The suite helps teams catch missing security requirements during planning, surface scoped concerns during risky implementation work, offer opt-in review help after coding, and propose a practical security check plan before release. It is advisory-first: it improves signal and consistency, but it does not certify a repository as secure, fully reviewed, or production-ready.
 
 ## How It Works
 
-1. Planning stage: `sentinelx-plan-gap`
-2. Risky implementation stage: `sentinelx-prime`
-3. Post-implementation review stage: `sentinelx-review-gate`
-4. Pre-release hardening stage: `sentinelx-test-rig`
+SentinelXPrime maps to four development stages, each with a dedicated skill:
+
+1. **Planning** — `sentinelx-plan-gap`: identifies missing security requirements before code is written.
+2. **Implementation** — `sentinelx-prime`: surfaces scoped security concerns during risky changes.
+3. **Review** — `sentinelx-review-gate`: provides opt-in security review after implementation.
+4. **Pre-release** — `sentinelx-test-rig`: proposes a stack-aware security check plan before release or handoff.
 
 Use `using-sentinelx` as the lightweight bootstrap skill when a session needs quick orientation to the suite.
 
 ## Supported Stacks
 
-- `.NET / ASP.NET Core`
-- `Java / Spring`
-- `Node / TypeScript`
-- `Python`
-- `Go`
-- `Ruby on Rails`
-- `PHP / Laravel`
-- `Rust`
+`.NET / ASP.NET Core` · `Java / Spring` · `Node / TypeScript` · `Python` · `Go` · `Ruby on Rails` · `PHP / Laravel` · `Rust`
 
-If the stack is unclear, SentinelXPrime falls back to common web-security guidance and says that the stack inference is uncertain.
+If the stack is unclear, SentinelXPrime falls back to common web-security guidance and notes that the stack inference is uncertain.
 
-Crypto-sensitive discussions should cross-check [`skills/shared/crypto-guidance.md`](skills/shared/crypto-guidance.md).
+For crypto-sensitive discussions, cross-check [`skills/shared/crypto-guidance.md`](skills/shared/crypto-guidance.md).
 
 ## Stage Decision Aid
 
-- If the code is done and the next question is "is this implementation safe enough?", use `sentinelx-review-gate`.
-- If the next step is release or handoff hardening, use `sentinelx-test-rig`.
-- If the stage evidence is weak or contradictory, stay in `uncertain` mode and keep the guidance advisory until the stage becomes clearer.
+| Situation | Recommended Skill |
+| --- | --- |
+| Code is done; "is this implementation safe enough?" | `sentinelx-review-gate` |
+| Next step is release or handoff hardening | `sentinelx-test-rig` |
+| Stage evidence is weak or contradictory | Stay in `uncertain` mode — keep guidance advisory until the stage becomes clearer |
 
 ## Installation
 
@@ -51,35 +48,31 @@ Crypto-sensitive discussions should cross-check [`skills/shared/crypto-guidance.
 | Cursor | Compatibility guidance | [`docs/README.cursor.md`](docs/README.cursor.md) |
 | Kilo | Compatibility guidance | [`docs/README.kilo.md`](docs/README.kilo.md) |
 
-Supported means the repository ships a documented install surface that exists in this repo. Compatibility guidance means the repo documents a low-risk way to reuse the instructions and skills without claiming an officially validated plugin path.
+**Supported** means the repository ships a documented install surface that exists in this repo. **Compatibility guidance** means the repo documents a low-risk way to reuse the instructions and skills without claiming an officially validated plugin path.
 
-Current release or handoff claims for Codex, Claude Code, and OpenCode should be backed by recorded smoke evidence in [`docs/validation/release-readiness.md`](docs/validation/release-readiness.md).
-Use `node scripts/check-release-readiness.mjs` or the `Release Claim Readiness` workflow before making an external release-ready or handoff claim.
+Release or handoff claims for supported platforms should be backed by recorded smoke evidence in [`docs/validation/release-readiness.md`](docs/validation/release-readiness.md). Run `node scripts/check-release-readiness.mjs` or the `Release Claim Readiness` workflow before making an external release-ready or handoff claim.
 
-## Repository Status
-
-- Packaging, installation docs, and validator coverage are in good shape for private collaborator review.
-- `bash scripts/static-validation.sh` is expected to pass in a Node.js 22 + Ruby environment.
-- `node scripts/check-release-readiness.mjs` still fails because Claude Code does not yet have a fresh authenticated runtime `pass` row in the readiness matrix.
-- Until that evidence exists, describe the repo as validated for private review, not as fully release-ready or handoff-ready.
-
-Latest updates in this snapshot:
-
-- Share-facing root reports are now English-only and canonicalized as `cross-validation-report-2026-04-04.md` and `phased-remediation-plan-2026-04-04.md`.
-- The release-readiness claim gate now accepts only the canonical readiness matrix and enforces current-pass freshness checks.
-- Doc validators now cover root markdown files, reject repository-escape local links, and keep the markdown inventory contract centralized.
-- Legacy-name validation and related regression coverage were hardened to fail on actionable lint instead of uncaught stack traces.
-
-## Verify Installation
+## Quick Start
 
 Start a fresh session and try one of these prompts:
 
-- `Use $sentinelx-prime while we plan this new ASP.NET Core feature.`
-- `Use $sentinelx-plan-gap to review this Node/TypeScript API design for missing security requirements.`
-- `Use $sentinelx-review-gate to run a focused security review on the completed auth changes.`
-- `Use $sentinelx-test-rig to propose a stack-aware security check plan for this release handoff.`
+```
+Use sentinelx-prime while we plan this new ASP.NET Core feature.
+```
 
-More examples live in [`docs/examples/example-prompts.md`](docs/examples/example-prompts.md).
+```
+Use sentinelx-plan-gap to review this Node/TypeScript API design for missing security requirements.
+```
+
+```
+Use sentinelx-review-gate to run a focused security review on the completed auth changes.
+```
+
+```
+Use sentinelx-test-rig to propose a stack-aware security check plan for this release handoff.
+```
+
+More examples in [`docs/examples/example-prompts.md`](docs/examples/example-prompts.md).
 
 ## What's Inside
 
@@ -92,41 +85,47 @@ More examples live in [`docs/examples/example-prompts.md`](docs/examples/example
 | `sentinelx-test-rig` | Opt-in security test/check planning before release |
 | `shared/*` | Common threat references, finding schema, and stack profiles |
 
-## Philosophy / Safety Model
+## Philosophy
 
-- advisory-first by default
-- no false assurance
-- no silent installs
-- no hidden mutation
-- read-only active analysis only after explicit user consent
-- substantial outputs separate reviewed areas, unreviewed areas, assumptions, and tools run
+SentinelXPrime is built on a clear safety model:
+
+- **Advisory-first** — guidance by default, never silent enforcement.
+- **No false assurance** — findings state what was checked and what was not.
+- **No silent installs** — nothing is installed or mutated without explicit user action.
+- **Read-only analysis** — active analysis runs only after explicit user consent.
+- **Transparent outputs** — substantial results separate reviewed areas, unreviewed areas, assumptions, and tools run.
 
 ## Updating
 
-- Codex: update the clone used by your install doc, then restart Codex
-- Claude Code: update the plugin clone and restart the session
-- OpenCode: update the clone or project copy used by your install path, then restart OpenCode
-- Cursor and Kilo: refresh any copied docs or rules material from this repo
-- See [CHANGELOG.md](CHANGELOG.md) for notable repository changes.
+| Platform | Steps |
+| --- | --- |
+| Codex | Update the clone used by your install doc, then restart Codex |
+| Claude Code | Update the plugin clone and restart the session |
+| OpenCode | Update the clone or project copy used by your install path, then restart OpenCode |
+| Cursor / Kilo | Refresh any copied docs or rules material from this repo |
+
+See [CHANGELOG.md](CHANGELOG.md) for notable changes between versions.
 
 ## Troubleshooting
 
-- Skills not showing up: confirm the platform-specific install doc was followed exactly and start a fresh session.
-- Hook context missing in Claude Code: verify [`hooks/hooks.json`](hooks/hooks.json) and [`hooks/session-start`](hooks/session-start) are present in the plugin root.
-- Legacy prompt names failing: use the migration guide at [`docs/migration-from-codex-sentinel.md`](docs/migration-from-codex-sentinel.md). This repo does not ship old-name aliases.
-- Release packaging issues: build from the SentinelXPrime repo root only, not from a wrapper workspace or nested copy.
+| Issue | Fix |
+| --- | --- |
+| Skills not showing up | Confirm the platform-specific install doc was followed exactly; start a fresh session |
+| Hook context missing in Claude Code | Verify [`hooks/hooks.json`](hooks/hooks.json) and [`hooks/session-start`](hooks/session-start) are present in the plugin root |
+| Legacy prompt names failing | Follow the migration guide at [`docs/migration-from-codex-sentinel.md`](docs/migration-from-codex-sentinel.md) — this repo does not ship old-name aliases |
+| Release packaging issues | Build from the SentinelXPrime repo root only, not from a wrapper workspace or nested copy |
 
-## Validation And Release
+## Validation and Release
 
-Validation prerequisites:
+### Prerequisites
 
 - Node.js 22
-- Ruby available for `scripts/static-validation.sh`
-- `codex` CLI on `PATH` for live eval runs
-- readable Codex auth at `$CODEX_HOME/auth.json` or `~/.codex/auth.json` for live eval runs
-- `unzip` plus either `zip` or `ditto` for release packaging and archive verification
+- Ruby (for `scripts/static-validation.sh`)
+- `codex` CLI on `PATH` (for live eval runs)
+- Readable Codex auth at `$CODEX_HOME/auth.json` or `~/.codex/auth.json` (for live eval runs)
+- `unzip` plus either `zip` or `ditto` (for release packaging and archive verification)
 
-Recommended local verification:
+### Local Verification
 
 ```bash
 bash scripts/static-validation.sh
@@ -139,7 +138,7 @@ node scripts/check-doc-links.mjs
 node scripts/check-legacy-names.mjs
 ```
 
-Public release flow:
+### Release Packaging
 
 ```bash
 bash scripts/package-release.sh
@@ -149,13 +148,15 @@ node scripts/verify-release-archive.mjs dist/SentinelXPrime-fallback.zip
 node scripts/check-release-readiness.mjs
 ```
 
-Build release archives only from a clean SentinelXPrime repo root. Do not package from wrapper workspaces, nested source trees, or Finder/manual zips.
-
-Treat `scripts/package-release.sh` as the canonical release archive flow. Finder/manual zip output is not a supported release artifact.
+Build release archives only from a clean SentinelXPrime repo root. Do not package from wrapper workspaces, nested source trees, or Finder/manual zips. Treat `scripts/package-release.sh` as the canonical release archive flow.
 
 ## Migration
 
 See [`docs/migration-from-codex-sentinel.md`](docs/migration-from-codex-sentinel.md) for renamed skills, command changes, archive/env var updates, and breaking changes.
+
+## Contributing
+
+Contributions, feedback, and bug reports are welcome. Please open an issue or submit a pull request.
 
 ## License
 
